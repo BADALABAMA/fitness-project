@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/styles/style.scss" />
+    <link rel="stylesheet" href="./public/styles/style.scss" />
     <link rel="stylesheet" href="./public/styles/media.scss" />
     <title>Application</title>
   </head>
   <body>
     <div id="app">
       <header class="header">
-        <div class="logo">WORKOUT</div>
-        <nav class="nav">
-          <a href="#" class="nav__link">EXERCISES</a
-          ><a href="#" class="nav__link">TRAINERS</a
-          ><a href="#" class="nav__link">PRICING</a
-          ><a href="#" class="nav__link">LOGIN</a>
-        </nav>
+        <div class="header-wrapper">
+          <div class="logo">WORKOUT</div>
+          <nav class="nav">
+            <a href="#" class="nav__link">EXERCISES</a
+            ><a href="#" class="nav__link">TRAINERS</a
+            ><a href="#" class="nav__link">PRICING</a
+            ><a href="#" class="nav__link">LOGIN</a>
+          </nav>
+        </div>
+
         <div class="article-wrapper">
           <p class="article">NEW</p>
-          <p class="sub__article">High Intensity workout to burn calories</p>
+          <p class="article__sub">High Intensity workout to burn calories</p>
         </div>
 
         <div class="paragraph-wrapper">
@@ -30,30 +33,21 @@
           </div>
         </div>
 
-        <div class="timer-wrapper">
-          <div class="timer">38:14</div>
-          <div class="timer__paragraph">TIME</div>
-        </div>
-
-        <div class="calories-wrapper">
-          <div class="calories">165</div>
-          <div class="calories__paragraph">EST CALORIES</div>
-        </div>
+        <img src="./public/images/main img.png" alt="#" class="header__img" />
 
         <div class="btn-wrapper">
-          <button class="primary__btn">Get Started</button>
-          <button class="secondary__btn">Preview</button>
+          <button class="btn__primary">Get Started</button>
+          <button class="btn__secondary">Preview</button>
         </div>
       </header>
 
       <main class="main">
         <div class="main__title">Popular Exercises</div>
-        <div class="main__subtitle">SEE MORE EXERCISES</div>
 
         <div class="main__card-wrapper">
           <div class="main__card">
             <img
-              src="./public/images/popular-exercises/teradmill.png"
+              src="./public/images/popular-exercises/Treadmill.png"
               alt=""
               class="card__img"
             />
@@ -98,7 +92,7 @@
 
           <div class="main__card">
             <img
-              src="./public/images/popular-exercises/push-up.png"
+              src="./public/images/popular-exercises/PushUp.png"
               alt=""
               class="card__img"
             />
@@ -106,19 +100,57 @@
           </div>
         </div>
       </main>
-
       <section class="section">
         <div class="section__title">Workout Program Made For You</div>
-
-        <div class="section__paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur
-          adipiscing.
+        <div class="section-wrapper">
+          <div class="section-box">
+            <div class="section__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              consectetur adipiscing.
+            </div>
+            <div class="section btn-wrapper">
+              <button class="btn__section">Get Started</button>
+            </div>
+          </div>
         </div>
-        <div class="section btn-wrapper">
-          <button class="btn__section">Get Started</button>
+
+        <div class="person-wrapper">
+          <div class="person">
+            <div class="person__title">Samantha William</div>
+            <img
+              src="./public/images/persons/samantha.png"
+              alt="#"
+              class="person__img"
+            />
+            <div class="sub__title">Trainer</div>
+          </div>
+
+          <div class="person">
+            <div class="person__title">Jonathan Wise</div>
+            <img
+              src="./public/images/persons/Jonathan.png"
+              alt="#"
+              class="person__img-john"
+            />
+            <div class="sub__title">Trainer</div>
+          </div>
+
+          <div class="person">
+            <div class="person__title">Karen Summer</div>
+            <img
+              src="./public/images/persons/Karen.png"
+              alt="#"
+              class="person__img"
+            />
+            <div class="sub__title">Trainer</div>
+          </div>
         </div>
       </section>
+
+      <footer class="footer">
+        <div class="footer__title">AllRights Reserved</div>
+      </footer>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

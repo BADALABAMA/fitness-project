@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+// * BG
+$primary-bg: rgb(0, 0, 0);
+$secondary-bg: rgb(17, 17, 17);
+
+// * Colors
+$primary-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 230, 66);
+$third-color: rgb(251, 19, 81);
+$fourth-color: rgb(37, 171, 117);
+$fifth-color: rgb(77, 77, 77);
+
+// Font-family
+$primary-ff: 'poppins';
+
+// Font-weight
+
+$primary-fw: 600;
+$secondary-fw: 400;
+
+// * Padding
+$p-xxl: 4rem;
+$p-xl: 3rem;
+$p-l: 2rem;
+$p-m: 1rem;
+$p-s: 0.8rem;
+$p-xs: 0.2rem;
+
+// * Margin
+$m-xxl: 4rem;
+$m-xl: 3rem;
+$m-l: 2rem;
+$m-m: 1rem;
+$m-s: 0.8rem;
+
+// * Font-size
+$fs-xxl: 4rem;
+$fs-xl: 3rem;
+$fs-l: 2rem;
+$fs-m: 1rem;
+$fs-s: 0.8rem;
+
+// * Box-shadow
+$b-sh-xl: 5px 8px 6px;
+$b-sh-l: 3px 4px 5px;
+
+// * Width
+$full-width: 100%;
+$half-width: 50%;
+$quoter-width: 25%;
+
+// * Height
+$full-height: 100%;
+$half-height: 50%;
+$quoter-height: 25%;
