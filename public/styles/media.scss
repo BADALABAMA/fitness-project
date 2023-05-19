@@ -1,0 +1,114 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+@media (max-width: 576px) {
+  .header {
+    .header-wrapper {
+      .logo {
+        font-weight: $primary-fw;
+        margin-top: $m-xl;
+        margin-left: $m-xl;
+        font-size: $fs-s;
+      }
+
+      .nav {
+        @include d-flex(center, center);
+        margin-top: $m-xl;
+        font-weight: $secondary-fw;
+        font-size: $fs-s - 0.1rem;
+        gap: 1rem;
+      }
+    }
+
+    .article-wrapper {
+      width: $half-width + 10%;
+      background: $secondary-bg;
+      border: none;
+      border-radius: 5rem;
+      padding: $p-l;
+      margin-top: $m-xxl;
+
+      gap: 2rem;
+
+      .article {
+        width: 5rem;
+        height: 2rem;
+      }
+
+      .article__sub {
+        width: $full-width;
+        font-weight: $secondary-fw;
+        font-size: $fs-m;
+      }
+    }
+
+    .paragraph-wrapper {
+      margin-top: $m-xl;
+      margin-left: $m-xl - 0.5rem;
+
+      .title {
+        width: $quoter-width;
+        line-height: 8rem;
+        font-weight: $primary-fw;
+        font-size: 130px;
+      }
+    }
+
+    .btn-wrapper {
+      margin-top: $m-l;
+      margin-left: $m-xl;
+    }
+  }
+  .main {
+    .main__title {
+      font-weight: $primary-fw;
+      font-size: $fs-xl;
+      margin-bottom: $m-l;
+    }
+    .main__card-wrapper {
+      @include grid-sys(1, 1);
+    }
+  }
+
+  .section {
+    margin-top: $m-xxl + 7rem;
+    margin-left: $m-xxl;
+
+    .section-wrapper {
+      .section-box {
+        display: none;
+      }
+
+      .section__paragraph {
+        display: none;
+      }
+
+      .btn__section {
+        display: none;
+      }
+    }
+    .section__title {
+      word-break: break;
+      font-size: $fs-xxl + 1rem;
+      font-weight: $primary-fw;
+      line-height: 6rem;
+      width: 20rem;
+      margin-bottom: $m-xxl;
+    }
+
+    .person-wrapper {
+      @include grid-sys(1, 1);
+      font-weight: $primary-fw;
+      margin-right: $m-xl;
+
+      .person__img-john {
+        width: 325px;
+      }
+
+      .person__img,
+      .person__img-john {
+        margin-left: $m-xxl;
+      }
+    }
+  }
+}
